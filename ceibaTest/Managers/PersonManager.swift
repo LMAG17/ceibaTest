@@ -31,7 +31,7 @@ class PersonsManager {
     
     func getPersons(){
         let dbPersons = databaseInteractor.getPersonsFromDB()
-        if dbPersons != nil {
+        if dbPersons != nil && dbPersons?.count ?? 0 >= 1 {
             delegate?.onPersonsUpdate(personsList: dbPersons!)
         }
         else if reachability.connection == .unavailable {

@@ -30,7 +30,7 @@ class PostsManager {
     func getPosts(){
         if reachability.connection == .unavailable{
             let dbPosts = databaseInteractor.getPostsFromDB()
-            if dbPosts != nil {
+            if dbPosts != nil && dbPosts?.count ?? 0 >= 1 {
                 delegate?.onPostsUpdate(posts: dbPosts!)
             }
             else {
