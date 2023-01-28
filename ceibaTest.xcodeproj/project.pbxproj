@@ -170,6 +170,7 @@
 		856C63142980D4960075F9D4 /* ceibaTest */ = {
 			isa = PBXGroup;
 			children = (
+				857F6BF92985AE8D006398ED /* Utils */,
 				854B17D92984B1EF0025F507 /* Database */,
 				854B17D42984A9850025F507 /* Services */,
 				8526D04529820356008E7127 /* Managers */,
@@ -183,7 +184,6 @@
 				854B17E02984DE0A0025F507 /* Main.storyboard */,
 				856C63232980D49B0075F9D4 /* Info.plist */,
 				857147E62984539200E24483 /* ceibaTest.xcdatamodeld */,
-				8544CDB82985909A00C4A40F /* Reachability.swift */,
 			);
 			path = ceibaTest;
 			sourceTree = "<group>";
@@ -234,6 +234,14 @@
 				856C634F2980D56B0075F9D4 /* PersonCellViewCell.xib */,
 			);
 			path = PersonCell;
+			sourceTree = "<group>";
+		};
+		857F6BF92985AE8D006398ED /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8544CDB82985909A00C4A40F /* Reachability.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		857F80CE29821A150001DEA3 /* ViewControllers */ = {
