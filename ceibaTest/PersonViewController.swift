@@ -155,6 +155,11 @@ extension PersonViewController : UISearchBarDelegate {
         search = searchText
         refreshTable()
     }
+    
+    //MARK: -> UISearchBar searchBarSearchButtonClicked
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.endEditing(true)
+    }
 }
 
 //MARK: -> PersonViewController alert
